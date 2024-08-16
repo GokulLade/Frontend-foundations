@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Body Element</title>
+    <style>
+      .dl1 {
+        background-color: gray;
+        font-size: 20px;
+        color: white;
+      }
+      fieldset {
+        border: 5px solid black;
+        background-color: rgb(244, 230, 203);
+        box-shadow: 2px 2px 6px gray;
+        margin-top: 20px;
+        height: 200px;
+      }
+      legend{
+        border: 2px solid black;
+        border-radius: 25px;
+        padding: 10px 40px;
+        background-color:greenyellow;
+        box-shadow: 2px 2px 8px black;
+        width: 200px;
+        height: 20px;
+      }
+      dl {
+        display: grid;
+        grid-template-columns: 3fr 9fr;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Paragraphs and Blockquotes: -->
+    <p align="center">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati
+      assumenda consectetur amet alias recusandae? Ab dolor alias magnam, dicta
+      rerum consequatur sequi ducimus omnis quasi facilis, iusto dolorem quis
+      perferendis.
+    </p>
+    <blockquote align="justify">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magni doloribus
+      quo aperiam laudantium tempore illo, aspernatur error aut excepturi
+      possimus natus blanditiis maiores vitae quasi quod placeat suscipit.
+      Tempore, fugit?
+    </blockquote>
+
+    <!-- Data Terms and Definitions: -->
+    <!-- <dl>
+      <dt class="dl1">HTML</dt>
+      <dd>Tag</dd>
+      <dd>Attribute</dd>
+      <dd>Web Info</dd>
+      <dd>Presentation</dd>
+
+      <dt class="dl1">CSS</dt>
+      <dd>Style</dd>
+      <dd>Properties</dd>
+      <dd>Animation</dd>
+      <dd>Design</dd>
+    </dl> -->
+
+      <!-- Fieldset and Legend:-->
+      <fieldset>
+        <legend align="center">Course Count</legend>
+        <dl>
+          <dt>HTML</dt>
+          <dd>30 Video</dd>
+
+          <dt>CSS</dt>
+          <dd>20 Video</dd>
+        </dl>
+      </fieldset>
+      <fieldset>
+        <legend align="center">Course Count</legend>
+        <dl>
+          <dt>Bootstrap</dt>
+          <dd>10 Video</dd>
+
+          <dt>JavaScript</dt>
+          <dd>30 Video</dd>
+        </dl>
+      </fieldset>
+    </dl>
+  </body>
+</html>

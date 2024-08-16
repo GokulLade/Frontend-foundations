@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Element</title>
+    <style>
+        #container {
+            width: 200px;
+            padding: 10px;
+            margin-bottom: 30px;
+            height: 140px;
+            border: 2px solid;
+            overflow: auto;
+        }
+
+        #check:checked~span {
+            color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <h2>Enroll In Course</h2>
+        <div id="container">
+            <dl>
+                <dt>Select The Course:</dt>
+                <br>
+                <dd><input type="checkbox" name="java" id="java" value="java" checked> Java</dd>
+                <dd><input type="checkbox" name="Oracle" id="Oracle" value="Oracle"> Oracle</dd>
+                <dd><input type="checkbox" name=".Net" id=".Net" value=".Net"> .Net</dd>
+                <dd><input type="checkbox" name="HTML" id="HTML" value="HTML"> HTML</dd>
+                <dd><input type="checkbox" name="CSS" id="CSS" value="CSS"> CSS</dd>
+                <dd><input type="checkbox" name="JavaScript" id="JavaScript" value="JavaScript"> JavaScript</dd>
+                <dd><input type="checkbox" name="PHP" id="PHP" value="PHP"> PHP</dd>
+                <dd><input type="checkbox" name="React" id="React" value="React"> React</dd>
+                <dd><input type="checkbox" name="C-Programming" id="C-Programming" value="C-Programming"> C-Programming
+                </dd>
+
+            </dl>
+        </div>
+        <input type="checkbox" id="check"> <span>Apply term and condition</span>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

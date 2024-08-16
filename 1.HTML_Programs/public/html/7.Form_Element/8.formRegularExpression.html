@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checking Input format</title>
+</head>
+
+<body>
+    <form action="">
+        <fieldset>
+            <legend>Checking Input Format</legend>
+
+            <!-- Query-1: Name only uppercase letters 4 to 15 chars  -->
+            <dl>
+                <dt>Enter user Name :</dt>
+                <dd><input type="text" name="username" pattern="[A-Z]{4,15}" placeholder="Enter Name in Uppercase" />
+                </dd>
+            </dl>
+
+            <!-- Query-2: Password alpha numeric with _ and special chars, range 4 to 15.  -->
+            <dl>
+                <dt>Enter Password :</dt>
+                <dd><input type="password" name="pass1" pattern="\w[@#$%^&*!]{4,15}"
+                        placeholder="Enter Strong Password" />
+                </dd>
+            </dl>
+
+            <!-- Query-3: Bank IFSC Code SBI9999HY  -->
+            <dl>
+                <dt>Enter Bank IFSC Code :</dt>
+                <dd><input type="text" name="bankifsc" pattern="SBI\d{4}[A-Z]{2}" placeholder="Enter Bank IFC Code" />
+                </dd>
+            </dl>
+
+            <!-- Query-4 : 10 digits Mobile number starting with +91  -->
+            <dl>
+                <dt>Enter Mobile Number :</dt>
+                <dd><input type="text" name="mobileNumber" pattern="\+91\d{10}" placeholder="Enter Mobile Number" />
+                </dd>
+            </dl>
+
+            <!-- Query-5: Password 4 to 15 chars alpha numeric with atleast one uppercase letter.  -->
+            <dl>
+                <dt>Enter Strong Password :</dt>
+                <dd><input type="password" name="pass2" pattern="(?=.*[A-Z]\w{4,15})"
+                        placeholder="Enter Strong Password" />
+                </dd>
+            </dl>
+
+            <!-- Query-6: Password 4 to 15 chars alpha numeric with atleast one special char  -->
+            <dl>
+                <dt>Enter Strong Password :</dt>
+                <dd><input type="password" name="pass3" pattern="(?=.*[@#$%!^&]\w[@#$%!&^]{4,15})"
+                        placeholder="Enter Strong Password" />
+                </dd>
+            </dl>
+
+            <!-- Query-7: Password 4 to 15 chars alpha numeric with atleast one uppercase letter, number and special char.  -->
+            <dl>
+                <dt>Enter Strong Password :</dt>
+                <dd><input type="password" name="pass4" pattern="(?=.*[A-z0-9@#$%^&]\w[@#$%^&]{4,15})"
+                        placeholder="Enter Strong Password" />
+                </dd>
+            </dl>
+
+            <!-- Query-8: Write regular expression to validate Email address.  -->
+            <dl>
+                <dt>Enter User Email :</dt>
+                <dd><input type="text" name="useremail" pattern="\w{4,10}[\@]\w{2,6}[\.]\w{2,5}"
+                        placeholder="Enter your Email " />
+                </dd>
+            </dl>
+
+
+            <button>Submit</button>
+
+        </fieldset>
+    </form>
+
+</body>
+
+</html>

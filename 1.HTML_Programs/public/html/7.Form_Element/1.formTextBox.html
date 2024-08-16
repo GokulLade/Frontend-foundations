@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TextBox Demo</title>
+    <style>
+        form {
+            width: 500px;
+            height: 600px;
+            margin-left: 220px;
+            padding: 15px;
+            border: 2px solid;
+            box-shadow: 2px 10px 2px gray;
+        }
+
+        dt {
+            font-size: 17px;
+            margin-bottom: 10px;
+        }
+
+        dd {
+            margin-bottom: 20px;
+        }
+
+        input {
+            border: 1px solid green;
+            border-radius: 7px;
+            padding: 3px;
+        }
+
+        button {
+            width: 90px;
+            padding: 4px;
+            margin-left: 200px;
+            background-color: green;
+            color: white;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <form method="get">
+        <dt>Name :</dt>
+        <dd><input type="text" name="uname" value="Gokul" autofocus /></dd>
+
+        <dt>Last :</dt>
+        <dd>
+            <input type="text" name="uname" placeholder="Your Last name" />
+        </dd>
+
+        <dt>College :</dt>
+        <dd>
+            <input type="text" name="collegeName" placeholder="College" readonly value="Deogiri College" />
+        </dd>
+
+        <dt>University :</dt>
+        <dd>
+            <input type="text" name="university" placeholder="university" disabled value="BAMU" />
+        </dd>
+
+        <dt>PRN No :</dt>
+        <dd>
+            <input type="text" name="prnNo" placeholder="PRN Number" size="16" required />
+        </dd>
+
+        <dt>College Number :</dt>
+        <dd>
+            <input type="text" name="collegeName" placeholder="College Number" minlength="10" maxlength="16" />
+        </dd>
+
+        <dt>Mobile Number :</dt>
+        <dd>
+            <input type="text" name="mobileNumber" placeholder="Mobile Number" required pattern="[0-9]{10}" />
+        </dd>
+
+        <dt>Course Name :</dt>
+        <dd>
+            <input type="text" name="courseName" placeholder="Select Course" list="courses" />
+            <datalist id="courses">
+                <option>Java</option>
+                <option>.Net</option>
+                <option>HTML</option>
+                <option>CSS</option>
+                <option>JavaScript</option>
+            </datalist>
+        </dd>
+
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

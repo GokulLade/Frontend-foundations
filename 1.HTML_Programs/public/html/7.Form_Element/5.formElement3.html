@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dropdown and ListBox</title>
+    <style>
+        #comment {
+            max-width: 200px;
+            max-height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+
+        <!-- Dropdown List: -->
+        <h2>Select the Course</h2>
+        <select>
+            <option value="c1">Java</option>
+            <option value="c2" disabled>.Net</option>
+            <option value="c3">PHP</option>
+            <option value="c4" selected>HTML</option>
+            <option value="c5">CSS</option>
+            <option value="c6">JavaScript</option>
+        </select>
+        <br><br>
+
+        <!-- Dropdown List with <optgroup> -->
+        <h2>Select the Course Location</h2>
+        <select>
+            <optgroup label="Hyderabad">
+                <option value="l1" selected>Ameerpeth</option>
+                <option value="l2" disabled>Begampeth</option>
+                <option value="l3">SR-Nager</option>
+                <option value="l4">Hi-tech-City</option>
+            </optgroup>
+            <optgroup label="Chh.Sambhajinage">
+                <option value="l1">Cidco</option>
+                <option value="l2" disabled>Padampura</option>
+                <option value="l3">Baba Bus Stand</option>
+                <option value="l4">Shivaji nagar</option>
+            </optgroup>
+        </select>
+
+        <!-- ListBox: -->
+        <h2>Select the Courses</h2>
+        <select multiple size="3">
+            <option value="c1">Java</option>
+            <option value="c2" disabled>.Net</option>
+            <option value="c3">PHP</option>
+            <option value="c4">HTML</option>
+            <option value="c5">CSS</option>
+            <option value="c6">JavaScript</option>
+        </select>
+        <br><br>
+
+        <!-- textarea  -->
+        <textarea name="comment" id="comment" rows="12" cols="20">
+
+         </textarea>
+
+        <!-- button  -->
+
+        <button>Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>

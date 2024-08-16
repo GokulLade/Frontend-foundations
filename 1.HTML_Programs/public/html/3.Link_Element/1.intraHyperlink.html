@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>Same Page Links</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+        background-color: rgb(251, 245, 239);
+      }
+      #container {
+        display: grid;
+        grid-template-columns: 3fr 6fr;
+      }
+      #leftSide {
+        width: 400px;
+        height: 694px;
+        border-right: 1px solid black;
+        background-color: rgb(235, 229, 229);
+      }
+      figure {
+        margin-left: 25px;
+      }
+      img {
+        border: 1px solid gray;
+        border-radius: 7px;
+        transition: 1s;
+      }
+      img:hover {
+        box-shadow: 2px 2px 10px gray;
+      }
+      figcaption {
+        width: 200px;
+        margin-left: 15px;
+        font-size: 35px;
+        color: rgba(255, 0, 0, 0.764);
+        font-weight: bold;
+      }
+      nav {
+        margin-top: 50px;
+        padding-right: 20px;
+      }
+      ul {
+        font-size: 25px;
+        list-style: none;
+        color: rgb(29, 26, 26);
+        margin-left: -15px;
+      }
+      li {
+        width: 150px;
+        margin-bottom: 15px;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      /* a:link{
+        color: green;
+      }
+      a:visited{
+        color: brown;
+      } */
+      a:active {
+        color: rgb(212, 24, 24);
+      }
+      footer {
+        margin-top: 95px;
+        margin-left: -15px;
+      }
+      dl {
+        margin-top: 30px;
+        /* border: 1px solid; */
+        display: flex;
+      }
+      dd {
+        font-size: 25px;
+      }
+      #rightSide {
+        height: 700px;
+        overflow: auto;
+      }
+      h2 {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="leftSide">
+        <div>
+          <figure>
+            <img
+              src="./assets/image/SimpleImage/myimage.jpeg"
+              alt="My Image"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>Gokul Lade</figcaption>
+          </figure>
+        </div>
+        <div>
+          <nav>
+            <ul>
+              <li>
+                <span class="bi bi-house-fill"></span> &nbsp;
+                <a href="#home">Home</a>
+              </li>
+              <li>
+                <span class="bi bi-person-workspace"></span> &nbsp;
+                <a href="#about">About</a>
+              </li>
+              <li>
+                <span class="bi bi-highlighter"></span> &nbsp;
+                <a href="#education">Education</a>
+              </li>
+              <li>
+                <span class="bi bi-code-slash"></span> &nbsp;
+                <a href="#skill">Skill</a>
+              </li>
+              <li>
+                <span class="bi bi-person"></span> &nbsp;
+                <a href="#contact">Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <footer>
+          <div>
+            <dl>
+              <dd class="bi bi-facebook"></dd>
+              <dd class="bi bi-twitter"></dd>
+              <dd class="bi bi-instagram"></dd>
+              <dd class="bi bi-envelope"></dd>
+              <dd class="bi bi-linkedin"></dd>
+            </dl>
+          </div>
+        </footer>
+      </div>
+      <div id="rightSide">
+        <div>
+          <div>
+            <h2 id="home">Home</h2>
+            <p>
+              My name is Gokul Lade, and I am a recent Bachelor of Computer
+              Applications (BCA) graduate. Throughout my academic journey, I
+              have cultivated a strong foundation in computer science, with a
+              particular focus on software development. My education has
+              equipped me with the theoretical knowledge and practical skills
+              necessary to excel in the ever-evolving tech industry. During my
+              BCA program, I delved into various aspects of computer science,
+              including programming languages, database management, web
+              development, and software engineering. This diverse exposure has
+              allowed me to develop a well-rounded skill set that I am eager to
+              apply in real-world scenarios.
+              <br /><br />
+              In addition to my formal education, I have actively pursued
+              opportunities to enhance my technical skills. I have completed
+              numerous projects that have honed my abilities in software
+              development. For instance, I developed a web-based application for
+              managing student records, which involved using HTML, CSS,
+              JavaScript, and PHP. This project not only reinforced my coding
+              skills but also taught me the importance of user-friendly
+              interfaces and efficient database management.
+              <br /><br />Furthermore, I have gained proficiency in several
+              programming languages, including Java, Python, and C++. Each
+              language has presented its unique challenges and opportunities for
+              growth. Java has been particularly instrumental in strengthening
+              my understanding of object-oriented programming, while Python has
+              allowed me to explore data science and machine learning concepts.
+              My experience with C++ has given me a deep appreciation for
+              low-level programming and memory management. <br /><br />My
+              software skills extend beyond programming languages. I am
+              well-versed in various development frameworks and libraries, which
+              have significantly enhanced my productivity and efficiency. For
+              example, I have used React.js to build dynamic and responsive web
+              applications, and I am familiar with Node.js for server-side
+              development. My familiarity with these tools enables me to create
+              robust and scalable applications that meet modern development
+              standards. <br /><br />In addition to technical skills, I have
+              developed strong problem-solving and analytical abilities. I enjoy
+              tackling complex challenges and finding innovative solutions. My
+              approach to problem-solving is methodical and detail-oriented,
+              ensuring that I thoroughly understand the problem before devising
+              a solution. This analytical mindset has been invaluable in
+              debugging code, optimizing algorithms, and improving overall
+              software performance. Collaboration and teamwork are also integral
+              to my approach to software development. <br /><br />I have had the
+              privilege of working on several group projects, where effective
+              communication and cooperation were key to success. These
+              experiences have taught me the importance of clear communication,
+              active listening, and constructive feedback. I am comfortable
+              working in both individual and team settings, and I thrive in
+              environments where collaboration is encouraged. My passion for
+              technology extends beyond the classroom and project work. I am an
+              avid learner who is always seeking to stay updated with the latest
+              industry trends and advancements. <br /><br />
+              <br /><br />
+            </p>
+          </div>
+          <div>
+            <h2 id="about">About</h2>
+            <p>
+              I regularly participate in online courses, webinars, and workshops
+              to expand my knowledge and stay abreast of emerging technologies.
+              This commitment to continuous learning ensures that I am
+              well-prepared to adapt to the ever-changing tech landscape. In
+              addition to my technical pursuits, I am also passionate about
+              contributing to the tech community. <br /><br />
+              I have been involved in several open-source projects, where I have
+              had the opportunity to collaborate with developers from around the
+              world. These experiences have not only enhanced my coding skills
+              but have also allowed me to give back to the community by
+              contributing to projects that benefit a wider audience. Overall,
+              my journey in the field of computer science has been both
+              challenging and rewarding. <br /><br />
+              My BCA degree has provided me with a solid foundation, and my
+              dedication to continuous learning and improvement has equipped me
+              with the skills needed to excel in the software development
+              industry. I am excited to embark on the next chapter of my career,
+              where I hope to apply my skills, contribute to innovative
+              projects, and continue growing as a software developer. Thank you
+              for taking the time to learn about my background and aspirations.
+            </p>
+            <br /><br />
+          </div>
+          <div>
+            <h2 id="education">Education</h2>
+            <p>
+              I am a recent graduate with a Bachelor of Computer Applications
+              (BCA). My educational journey began with the completion of my 10th
+              grade in 2019, where I developed a strong foundation in various
+              subjects, laying the groundwork for my future studies. In 2021, I
+              completed my 12th grade, focusing on science with a keen interest
+              in computer science and mathematics. This period was crucial in
+              shaping my passion for technology and programming, inspiring me to
+              pursue a career in the field of software development.
+
+              <br /><br />
+
+              After completing my 12th grade, I enrolled in a BCA program, which
+              I successfully completed in 2024. During my BCA studies, I delved
+              deep into the world of computer science, gaining extensive
+              knowledge and hands-on experience in programming languages,
+              database management, web development, and software engineering. I
+              worked on various projects that helped me hone my coding skills
+              and understand the practical applications of theoretical concepts.
+              My education has not only provided me with technical proficiency
+              but also equipped me with problem-solving abilities and analytical
+              thinking, which are essential in the dynamic field of software
+              development.
+
+              <br /><br />
+
+              In addition to my academic achievements, I actively pursued
+              opportunities to enhance my technical skills. I developed a
+              web-based application for managing student records using HTML,
+              CSS, JavaScript, and PHP, which reinforced my coding skills and
+              taught me the importance of user-friendly interfaces and efficient
+              database management. My proficiency extends to several programming
+              languages, including Java, Python, and C++, each contributing
+              uniquely to my understanding of software development. I am also
+              well-versed in development frameworks like React.js and Node.js,
+              enabling me to create robust and scalable applications.
+
+              <br /><br />
+
+              Throughout my education, I emphasized continuous learning and
+              stayed updated with the latest industry trends. I regularly
+              participated in online courses, webinars, and workshops to expand
+              my knowledge and adapt to emerging technologies. Moreover, I have
+              been involved in open-source projects, collaborating with
+              developers worldwide and contributing to the tech community. These
+              experiences have not only enhanced my coding skills but also
+              allowed me to give back to the community by contributing to
+              projects that benefit a wider audience.
+
+              <br /><br />
+
+              Overall, my educational journey has been both challenging and
+              rewarding. Completing my 10th grade in 2019 and 12th grade in 2021
+              laid the foundation for my academic growth, culminating in my BCA
+              degree in 2024. My dedication to continuous learning and
+              improvement has equipped me with the skills needed to excel in the
+              software development industry. I am excited to embark on the next
+              chapter of my career, where I hope to apply my skills, contribute
+              to innovative projects, and continue growing as a software
+              developer. Thank you for taking the time to learn about my
+              background and aspirations.
+            </p>
+          </div>
+          <br /><br />
+          <div>
+            <h2 id="skill">Skill</h2>
+            <p>
+              n addition to my educational accomplishments, I have developed a
+              diverse and robust set of technical skills. I am proficient in
+              several programming languages, including Java, Python, and C++.
+              Java has been particularly instrumental in strengthening my
+              understanding of object-oriented programming, while Python has
+              allowed me to explore data science and machine learning concepts.
+              My experience with C++ has given me a deep appreciation for
+              low-level programming and memory management.
+
+              <br /><br />
+
+              My software development skills are further enhanced by my
+              familiarity with various frameworks and libraries. I have used
+              React.js to build dynamic and responsive web applications, and I
+              am well-versed in Node.js for server-side development.
+              Additionally, I have experience with HTML, CSS, and Tailwind CSS,
+              enabling me to create visually appealing and user-friendly web
+              interfaces. My knowledge of SQL and database management ensures
+              that I can efficiently handle data storage and retrieval
+              operations.
+
+              <br /><br />
+
+              Beyond technical skills, I have cultivated strong problem-solving
+              and analytical abilities. I approach challenges methodically,
+              ensuring a thorough understanding of the problem before devising a
+              solution. This mindset has been invaluable in debugging code,
+              optimizing algorithms, and improving overall software performance.
+              My commitment to continuous learning has also led me to
+              participate in online courses, webinars, and workshops, keeping me
+              updated with the latest industry trends and advancements.
+
+              <br /><br />
+
+              Moreover, I have actively contributed to the tech community
+              through involvement in open-source projects. These collaborations
+              have not only enhanced my coding skills but also allowed me to
+              work with developers from around the world, fostering a spirit of
+              cooperation and shared learning. Overall, my educational journey
+              and technical expertise have prepared me to excel in the software
+              development industry, and I am eager to apply my skills in
+              real-world projects and continue growing as a software developer.
+            </p>
+            <br /><br />
+          </div>
+          <div>
+            <h2 id="contact">Contact</h2>
+            <form action="">
+              <label for="subject">Subject</label>
+              <input type="text" name="subject" />
+              <br /><br />
+              <label for="Describe">Describe</label>
+              <textarea name="des" id="des"></textarea>
+              <br /><br />
+              <button type="submit" name="customerForm">Submit</button>
+            </form>
+          </div>
+        </div>
+        <footer>
+          <div>
+            <dl>
+              <dd class="bi bi-facebook"></dd>
+              <dd class="bi bi-twitter"></dd>
+              <dd class="bi bi-instagram"></dd>
+              <dd class="bi bi-envelope"></dd>
+              <dd class="bi bi-linkedin"></dd>
+            </dl>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

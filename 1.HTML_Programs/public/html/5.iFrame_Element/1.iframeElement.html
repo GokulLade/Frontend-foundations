@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>iframe Element</title>
+</head>
+<style>
+  body {
+    margin: 0px;
+    padding: 0px;
+  }
+
+  #container {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+  }
+
+  #leftSide {
+    background-color: rgb(243, 243, 243);
+    height: 694px;
+    border-right: 1px solid black;
+  }
+
+  h2 {
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(218, 80, 80);
+    margin-left: 20px;
+  }
+
+  ul {
+    list-style: circle;
+  }
+
+  ul li {
+    margin-bottom: 14px;
+  }
+
+  a {
+    color: black;
+    text-decoration: none;
+  }
+
+  a:active {
+    color: red;
+  }
+
+  #rightSide {}
+
+  iframe {
+    width: 99%;
+    height: 690px;
+    border: none;
+  }
+</style>
+
+<body>
+  <div id="container">
+    <div id="leftSide">
+      <h2>Page Content</h2>
+      <ul>
+        <li>
+          <a href="7.nareshItCart.html" target="frameBody">Naresh-It Cart</a>
+        </li>
+        <li>
+          <a href="8.intraHyperlink.html " target="frameBody">Intra Hyperlink</a>
+        </li>
+        <li>
+          <a href="9.interHyperlink.html" target="frameBody">Inter Hyperlink</a>
+        </li>
+        <li><a href="6.useIcon.html" target="frameBody">UseIcon</a></li>
+        <li>
+          <a href="2.htmlPagelayout.html" target="frameBody">HTML page Layout</a>
+        </li>
+      </ul>
+    </div>
+    <div id="rightSide">
+      <iframe name="frameBody"></iframe>
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout of HTML Page</title>
+    <style>
+      header {
+        background-color: tomato;
+        color: white;
+        padding: 10px;
+        font-size: 25px;
+        text-align: center;
+        border: 2px solid black;
+        margin-top: 1px;
+      }
+      footer {
+        background-color: rgb(255, 71, 154);
+        color: white;
+        padding: 5px;
+        font-size: 25px;
+        text-align: center;
+        border: 2px solid black;
+      }
+      section {
+        height: 571px; /*Maximum 700*/
+        width: 1200; /*maximum 1200px*/
+        display: grid;
+        grid-template-columns: 2fr 8fr 2fr;
+        margin-top: 20px;
+      }
+      nav div {
+        border: 2px black solid;
+        border-radius: 10px;
+        width: 120px;
+        margin-bottom: 20px;
+        margin-left: 10px;
+        padding: 10px;
+        font-size: 20px;
+        background-color: tomato;
+        color: white;
+      }
+      aside {
+        width: 100px;
+        height: 50px;
+        border: 2px dotted black;
+      }
+      article {
+        width: 200px;
+        text-align: center;
+        background-color: darkcyan;
+        color: white;
+        padding: 5px;
+        margin-left: 300px;
+        font-size: 25px;
+      }
+      main div {
+        font-size: 50px;
+        text-align: center;
+      }
+      #fig {
+        display: grid;
+        grid-template-columns: auto auto auto;
+      }
+      figcaption {
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- First -->
+    <header>
+      <div>Amazon Shopping</div>
+    </header>
+
+    <!-- second -->
+    <section>
+      <nav>
+        <menu>
+          <div>Home</div>
+          <div>Electronic</div>
+          <div>Footwear</div>
+          <div>Fashion</div>
+        </menu>
+      </nav>
+      <main>
+        <dialog>Any Help..?</dialog>
+
+        <div>Welcome to online shopping store</div>
+        <div id="fig">
+          <figure>
+            <img
+              src="assets/image/Mobile.jpg"
+              alt="Mobile"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>Samsung-5G</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/image/Laptop.jpg"
+              alt="Mobile"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>Dell-Laptop</figcaption>
+          </figure>
+          <figure>
+            <img
+              src="assets/image/Computer.jpg"
+              alt="Mobile"
+              width="200px"
+              height="200px"
+            />
+            <figcaption>Hp-Computer</figcaption>
+          </figure>
+        </div>
+        <article>79% Off on Electronic</article>
+      </main>
+      <aside>Ads here...</aside>
+    </section>
+
+    <!-- third -->
+    <footer>
+      <div>&copy; copyright 2024</div>
+    </footer>
+  </body>
+</html>

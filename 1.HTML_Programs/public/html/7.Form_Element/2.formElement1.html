@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Element</title>
+    <style>
+        form {
+            width: 500px;
+            padding: 20px;
+            margin-left: 300px;
+            border: 2px solid;
+        }
+
+        button {
+            padding: 10px;
+            width: 90px;
+            margin-left: 200px;
+            border-radius: 7px;
+            background-color: green;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <dl>Enter Password: </dl>
+        <dd><input type="password" name="pass" id="pass" autofocus></dd>
+
+        <dl>Enter Your Age: </dl>
+        <dd><input type="number" name="age" id="age" min="15" max="25" step="0.1"></dd>
+
+        <dl>Enter Price: </dl>
+        <dd><input type="range" name="price" id="price" min="1000" max="10000" step="100" value="2000"></dd>
+
+        <dl>Enter Date and Time: </dl>
+        <dd><input type="datetime-local" name="datetime" id="datetime"></dd>
+
+        <dl>Enter Date: </dl>
+        <dd><input type="date" name="date" id="date" min="2024-07-04" max="2024-08-04"></dd>
+
+        <dl>Enter Month: </dl>
+        <dd><input type="month" name="month" id="month"></dd>
+
+        <dl>Enter Week: </dl>
+        <dd><input type="week" name="week" id="week"></dd>
+
+        <dl>Enter Email: </dl>
+        <dd><input type="email" name="email" id="email"></dd>
+
+        <dl>Enter URL: </dl>
+        <dd><input type="url" name="url" id="url"></dd>
+
+        <dl>Upload Resume: </dl>
+        <dd><input type="file" name="resume" id="resume" multiple></dd>
+
+        <dl>Upload Image: </dl>
+        <dd><input type="file" name="image" id="image" accept=".jpg,.png"></dd>
+
+        <dl>Check Color: </dl>
+        <dd><input type="color" name="color" id="color" value="#dea60b"></dd>
+
+        <dl>Select Gender: </dl>
+        <dd><input type="radio" name="gender" id="gender" value="male"> Male </dd>
+        <dd><input type="radio" name="gender" id="gender" value="female"> Female</dd>
+        <dd><input type="radio" name="gender" id="gender" value="other"> Other</dd>
+
+        <dl>Select Courses: </dl>
+        <dd><input type="checkbox" name="java" id="java" value="java"> Java </dd>
+        <dd><input type="checkbox" name=".Net" id=".Net" value=".Net"> .Net</dd>
+        <dd><input type="checkbox" name="Oracle" id="Oracle" value="Oracle"> Oracle</dd>
+
+        <br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>
