@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Element Validation State Pseudo Classes</title>
+    <style>
+        #name+span {
+            display: none;
+        }
+
+        #name:required+span {
+            display: inline;
+        }
+
+        #name:valid+span {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <label for="name">Enter Name</label>
+        <input type="text" name="name" id="name" required><span> *Enter Name please</span>
+        <br><br>
+        <label for="pass">Enter Password</label>
+        <input type="password" name="pass" id="pass" required>
+        <br><br>
+        <label for="age">Enter Age</label>
+        <input type="number" name="age" id="age" min="18" max="30">
+        <br><br>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+
+    </form>
+</body>
+
+</html>
