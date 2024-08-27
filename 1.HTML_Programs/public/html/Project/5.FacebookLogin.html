@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+            overflow: hidden;
+            background-color: rgba(233, 233, 233, 0.747);
+        }
+
+        #container {
+            height: 694px;
+            width: 1393px;
+        }
+
+        .block-1 {
+            height: 70%;
+        }
+
+        .block-2 {
+            height: 28%;
+            background-color: white;
+        }
+
+        figure {
+            text-align: center;
+        }
+
+        form {
+            width: 350px;
+            height: 300px;
+            padding: 15px 10px;
+            align-items: center;
+            border-radius: 10px;
+            background-color: white;
+            margin-left: 500px;
+        }
+
+        h4 {
+            text-align: center;
+        }
+
+        input {
+            width: 195px;
+            height: 35px;
+            border: 1px solid transparent;
+            box-shadow: 0 0 0 0.2px rgba(0, 0, 0, 0.5);
+            border-radius: 5px;
+            padding-left: 10px;
+            padding-right: 130px;
+            margin-bottom: 10px;
+
+        }
+
+        input:focus {
+            outline: none;
+        }
+
+        .btn {
+            width: 334px;
+            height: 35px;
+            border: none;
+            border-radius: 7px;
+            color: white;
+            background-color: rgb(51, 51, 235);
+            transition: 1s;
+            margin-bottom: 40px;
+        }
+
+        .btn:hover {
+            background-color: rgb(62, 62, 248);
+            transition: 1s;
+        }
+
+        a {
+            margin-left: 20px;
+            color: rgb(89, 89, 255);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+        .block-2 p{
+            position: absolute;
+            bottom: 0px;
+            font-size: 12px;
+            color: gray;
+            margin-left: 300px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="block-1">
+            <div>
+                <figure><img src="../../assets/image/SimpleImage/facebookText.svg" alt="facebookText" width="17%"
+                        height="17%"></figure>
+                <form action="">
+                    <h4>Log in to Facebook</h4>
+                    <input type="text" name="user" id="user" placeholder="Email address or Phone Number"><br>
+                    <input type="password" name="pass" id="pass" placeholder="Password"><br>
+                    <button class="btn">Log in</button><br>
+
+                    <a href="">Forgotten account? </a> <a href=""> Sign up for Facebook</a>
+                </form>
+            </div>
+        </div>
+        <div class="block-2">
+            <p>English (UK)
+                हिन्दी
+                اردو
+                தமிழ்
+                বাংলা
+                मराठी
+                తెలుగు
+                ગુજરાતી
+                ಕನ್ನಡ
+                മലയാളം
+                Españo
+                <button>+</button>
+            </p>
+                
+        </div>
+    </div>
+
+</body>
+
+</html>
