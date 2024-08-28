@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Placeholder Style</title>
+    <style>
+        :root{
+            text-align: center;
+        }
+        form{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        border: 1px solid transparent;
+        box-shadow: 0px 0px 0px 0.3px gray;
+
+        }
+        input{
+        margin-bottom: 10px;
+        }
+        .sty::placeholder{
+            color: red;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <form action="">
+        Name : <input type="text" name="uName" class="uName sty" placeholder="Enter Your Name"><br>
+        Password : <input type="password" name="pass" class="pass sty" placeholder="Enter Your Password"><br><br>
+        <button>Submit</button>
+    </form>
+</body>
+
+</html>

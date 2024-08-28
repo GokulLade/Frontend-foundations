@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>After Class</title>
+    <style>
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        li::after {
+            content: "<-";
+        }
+
+        li:nth-child(1)::before {
+            content: "=>";
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Bootstrap</li>
+        <li>JavaScript</li>
+        <li>jQuery</li>
+    </ul>
+</body>
+
+</html>
