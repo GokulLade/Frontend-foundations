@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            width: 50%;
+            height: 300px;
+            border: 2px solid black;
+            margin-left: 200px;
+        }
+
+        .child-1 {
+            width: 100px;
+            height: 100px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            border: 1px solid red;
+            position: absolute;
+            left: 40px;
+        }
+
+        .child-2 {
+            width: 100px;
+            height: 100px;
+            border: 1px solid green;
+            position: relative;
+            top: 20px;
+            left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="child-1">Absolute Position</div>
+        <div class="child-2">Relative Position</div>
+    </div>
+</body>
+
+</html>
