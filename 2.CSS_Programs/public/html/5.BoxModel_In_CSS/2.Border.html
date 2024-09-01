@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border in Css</title>
+    <style>
+        .container {
+            border: 2px solid black;
+        }
+
+        .child-1 {
+            padding: 30px;
+            border-left-width: 7px;
+            border-left-style: dotted;
+            border-left-color: red;
+        }
+
+        p {
+            padding: 10px;
+            border: 2px solid gray;
+            border-top-left-radius: 10px;
+        }
+        h1{
+            border: 10px solid transparent;
+            border-image: url("../../assets/favicon.ico") round 50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Gokul</h1>
+        <div class="child-1">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam esse expedita corrupti dolores fugiat
+                provident incidunt, ab nam natus ea, cupiditate fugit numquam at? Aut ipsam nobis cupiditate aliquam
+                officiis!</p>
+        </div>
+    </div>
+</body>
+
+</html>
