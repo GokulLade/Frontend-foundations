@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-indexPosition</title>
+    <style>
+        #container {
+            width: 700px;
+            height: 500px;
+        }
+
+        .div-1 {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 50px;
+            top: 10px;
+            z-index: 1;
+            background-color: red;
+        }
+
+        .div-2 {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 80px;
+            top: 20px;
+            z-index: 2;
+            background-color: orange;
+        }
+
+        .div-3 {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 110px;
+            top: 30px;
+            z-index: 3;
+            background-color: green;
+        }
+
+        .div-4 {
+            width: 150px;
+            height: 100px;
+            position: absolute;
+            left: 140px;
+            top: 40px;
+            z-index: 4;
+            background-color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div class="div-1">1</div>
+        <div class="div-2">2</div>
+        <div class="div-3">3</div>
+        <div class="div-4">4</div>
+    </div>
+</body>
+
+</html>
