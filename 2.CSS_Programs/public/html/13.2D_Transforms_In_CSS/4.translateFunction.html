@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Function</title>
+    <style>
+        .container {
+            height: 640px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row-reverse;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        button {
+            width: 150px;
+            height: 50px;
+            color: white;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: bold;
+        }
+
+        .btn-1 {
+            background-color: green;
+        }
+
+        .btn-2 {
+            background-color: red;
+        }
+
+        .btn-2:hover {
+            transform: translateX(-169px);
+            transition: 1s;
+        }
+
+        .btn-2:hover+.btn-1 {
+            transform: translateX(169px);
+            transition: 1s;
+        }
+        .text{
+            height: 300px;
+        }
+        h1{
+            color:#de3f74fb;
+            font-size: 100px;
+            position: relative;
+            top: 105px;
+            left: 370px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="text">
+            <h1>Do You Like Me <span>&#10084;</span></h1>
+        </div>
+        <form action="">
+            <button type="submit" class="btn-2">No</button>
+            <button type="submit " class="btn-1">Yes</button>
+        </form>
+    </div>
+</body>
+
+</html>
