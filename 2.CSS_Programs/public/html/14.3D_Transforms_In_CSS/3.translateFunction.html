@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Translate Function</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        div {
+            height: 700px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(../../assets/image/SimpleImage/NaturalImage.jpg);
+            background-size: 1500px 700px;
+            background-repeat: no-repeat;
+        }
+
+        img {
+            width: 200px;
+            height: 200px;
+            box-shadow: 12px 12px 0px black;
+            transition: 2s;
+        }
+
+        img:hover {
+            transform: translate3d(100px, 100px, 10px);
+            transition: 2s;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="../../assets/image/SimpleImage/myimage.jpeg" alt="myImg">
+    </div>
+</body>
+
+</html>
