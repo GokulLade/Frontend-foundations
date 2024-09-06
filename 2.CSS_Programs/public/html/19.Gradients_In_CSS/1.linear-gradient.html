@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linear Gradient</title>
+    <style>
+        html,body{
+            margin: 0px;
+            padding: 0px;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .parent{
+            width: 50%;
+            height: 50%;
+            border: 2px solid black;
+        }
+        .child{
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(to right,rgba(255, 0, 0, 0.658),green,rgb(255, 230, 0));
+        }
+    </style>
+</head>
+
+<body>
+    <div class="parent">
+        <div class="child">
+
+        </div>
+    </div>
+</body>
+
+</html>
