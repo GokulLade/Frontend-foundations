@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units In CSS</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .div-1 {
+            font-size: 20px;
+        }
+
+        .div-1 h1 {
+            font-size: 40px;
+        }
+
+        .div-2 {
+            font-size: 50px;
+        }
+
+        .div-2 h1 {
+            font-size: 40%;
+        }
+
+        .div-3 h1 {
+            font-size: 3vh;
+            font-size: 3vw;
+        }
+
+        .div-4 h1 {
+            font-size: 3vmax;
+            font-size: 7vmin;
+        }
+
+        .div-5 {
+            font-size: 2em;
+        }
+
+        .div-5 h1 {
+            font-size: 2em;
+        }
+
+        .div-5 h2 {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="div-1">
+        <h1>1.Pixel Unit[Absolute Unit]</h1>
+    </div>
+    <div class="div-2">
+        <h1>2.Percentage Unit[Change base On Parent]</h1>
+    </div>
+    <div class="div-3">
+        <h1>3.vh and vw Unit[change base on view screen]</h1>
+    </div>
+    <div class="div-4">
+        <h1>4.vmax and vmin unit [Stop based on distance]</h1>
+    </div>
+    <div class="div-5">
+        <h1>5.em [change base on parent (1em = 16px)]</h1>
+        <h2>6.em [change base on root(html) (1rem = 16px)]</h2>
+    </div>
+</body>
+
+</html>
