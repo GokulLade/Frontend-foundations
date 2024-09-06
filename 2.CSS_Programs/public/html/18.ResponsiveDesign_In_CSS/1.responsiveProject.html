@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <title>Responsive Design Project</title>
+    <style>
+        :root {
+            --text-color: #fa6352;
+        }
+
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+            margin: 0px;
+            padding: 0px;
+            font-family: Georgia;
+        }
+
+        #container {
+            width: 100%;
+            height: 100%;
+        }
+
+        header {
+            width: 100%;
+            height: 100px;
+            margin-top: -2.3vb;
+            border-bottom: 1px solid gray;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 2vw 3vw;
+        }
+
+        ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style: none;
+            gap: 2.3vw;
+        }
+
+        li {
+            font-size: 1.3vw;
+            font-weight: 5vw;
+        }
+
+        .btn-1 {
+            font-size: 1.3vw;
+            border: none;
+            padding: 0.7vw 1.3vw;
+            border-radius: 5px;
+            background-color: var(--text-color);
+            color: white;
+        }
+
+        section {
+            width: 100%;
+            height: calc(100% - 100px);
+            display: flex;
+            background-color: #F9FAFC;
+        }
+
+        .left {
+            width: 50%;
+            height: 100%;
+        }
+
+        h4 {
+            font-size: 3.5vw;
+            padding: 3vw 3vw;
+        }
+
+        span {
+            color: var(--text-color);
+        }
+
+        p {
+            padding: 0vw 3vw;
+            margin-top: -5.5vw;
+            color: gray;
+        }
+
+        .btn-2 {
+            font-size: 1.2vw;
+            padding: 1vw 1.3vw;
+            margin: 1vw 3vw;
+            border: none;
+            border-radius: 5px;
+            background-color: var(--text-color);
+            color: white;
+        }
+
+        button:hover {
+            cursor: pointer;
+        }
+
+        .right {
+            width: 50%;
+            height: 100%;
+        }
+
+        ul i {
+            display: none;
+        }
+
+        @media (max-width:800px) {
+
+            header {
+                height: 15vw;
+            }
+
+            ul li,
+            .btn-1 {
+                display: none;
+            }
+
+            ul i {
+                display: inline;
+                font-size: 5vw;
+            }
+
+            nav img {
+                width: 6vw;
+                height: 6vw;
+                margin-top: 3.6vw;
+            }
+
+            section {
+                display: flex;
+                flex-direction: column;
+            }
+
+            section .left {
+                width: 100%;
+                height: 100%;
+            }
+
+            section .right {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <header>
+            <nav>
+                <img src="../../assets/image/SimpleImage/glLogo.png" width="4%" height="5%" alt="">
+                <ul>
+                    <li>Store</li>
+                    <li>Course</li>
+                    <li>Career</li>
+                    <li>Blog</li>
+                    <li>Account</li>
+                    <button class="btn-1">Sign in</button>
+                    <i class="ri-menu-3-line"></i>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <div class="left">
+                <h4>Learn from the <span>coolest</span> coding platform of India.</h4>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facilis fugit non minima distinctio
+                    officiis quidem asperiores! Ea eveniet fuga, maiores blanditiis enim magni obcaecati laboriosam
+                    quas. Sit eius atque tenetur.</p>
+                <button class="btn-2">Explore Now</button>
+            </div>
+            <div class="right">
+                <img src="../../assets/image/SimpleImage/codingBoy.png" width="100%" height="100%" alt="codingBoy">
+            </div>
+        </section>
+    </div>
+
+</body>
+
+</html>
