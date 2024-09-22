@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <title>Modal In Bootstrap</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="box-container bg-light border d-flex flex-column align-items-center justify-content-center gap-2"
+            style="height: 100vh;">
+            <h2>Modals</h2>
+            <button class="btn btn-primary w-25" data-bs-toggle="modal"
+                data-bs-target="#registerModal">Register</button>
+            <button class="btn btn-warning w-25" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+        </div>
+
+        <!--------------------------------------- Modal Design for Register Page --------------------------------->
+        <div class="modal" id="registerModal">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100">Register New User</h2>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body p-5">
+                        <dl>
+                            <dt>User Name :</dt>
+                            <dd><input type="text" name="name" id="name" class="w-75"></dd>
+                            <dt> Password :</dt>
+                            <dd><input type="password" name="pass" id="pass" class="w-75"></dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-primary">Register</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--------------------------------------- Modal Design for Login Page --------------------------------->
+        <div class="modal" id="loginModal">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title text-center w-100">User Login</h2>
+                        <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <dl>
+                            <dt>User Name :</dt>
+                            <dd><input type="text" name="name" id="name" class="w-75"></dd>
+                            <dt> Password :</dt>
+                            <dd><input type="password" name="pass" id="pass" class="w-75"></dd>
+                        </dl>
+                    </div>
+                    <div class="modal-footer ">
+                        <button class="btn btn-primary">Login</button>
+                        <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <script src="../../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
