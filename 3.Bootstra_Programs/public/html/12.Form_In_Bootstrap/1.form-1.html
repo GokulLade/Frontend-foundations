@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <title>Document</title>
+</head>
+
+<body class="container-fluid">
+    <div class="d-flex justify-content-center align-items-center" style="height: 90vh;">
+        <div>
+            <h2>Register User</h2>
+            <div class="mb-2">
+                <label class="form-label" for="userName">User Name :</label>
+                <div>
+                    <input type="text" name="userName" class="form-control">
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="password">Password :</label>
+                <div>
+                    <input type="password" name="password" class="form-control">
+                </div>
+            </div>
+            <div class="mb-2">
+                <label class="form-label" for="city">Select city </label>
+                <div>
+                    <select name="city" id="city" class="form-select">
+                        <option value="delhi">Delhi</option>
+                        <option value="mumbai">Mumbai</option>
+                        <option value="Hyderabad">Hyderabad</option>
+                    </select>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="">You want Subscription</label>
+                <div>
+                    <input type="checkbox" name="subscribe" class="form-check-input"> <label for="Yes"
+                        class="form-check-label">Yes</label>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="visit">You visited this Web first time</label>
+                <div class="form-switch">
+                    <input type="checkbox" name="visit" class="form-check-input"> <label for="Yes"
+                        class="form-check-label">Yes</label>
+                </div>
+            </div>
+            <div class="mb-2">
+                <label for="age">Select age</label>
+                <div>
+                    <input type="range" name="age" class="form-range">
+                </div>
+            </div>
+            <div class="mb-2">
+                <button class="btn btn-primary w-100">Register</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
