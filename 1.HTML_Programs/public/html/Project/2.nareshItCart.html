@@ -1,242 +1,240 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css"
-    />
-    <title>Naresh-It cart page</title>
-    <style>
-      body {
-        margin: 0px;
-        padding: 0px;
-      }
-      #container {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        gap: 15px;
-        flex-wrap: wrap;
-      }
-      #cart {
-        width: 300px;
-        height: 500px;
-        margin-top: 50px;
-        margin-left: 30px;
-        border: 1px solid black;
-        border-radius: 17px;
-        transition: 1s;
-      }
-      #cart:hover {
-        box-shadow: 6px 20px 50px gray;
-      }
-      img {
-        width: 100%;
-        height: 200px;
-        border-top-left-radius: 15px;
-        border-top-right-radius: 15px;
-      }
-      #card-body {
-        margin-left: 20px;
-      }
-      #star {
-        color: rgba(0, 0, 0, 0.8);
-        margin-bottom: 20px;
-      }
-      #information {
-        color: rgba(0, 0, 0, 0.7);
-        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-      }
-      #card-footer {
-        margin-top: 85px;
-        border-top: 0.1px solid black;
-        border-bottom-left-radius: 15px;
-        border-bottom-right-radius: 15px;
-        display: grid;
-        grid-template-columns: 6fr 6fr;
-      }
-      button {
-        height: 39px;
-        border: none;
-        font-weight: 300;
-      }
-      #buttonEnroll {
-        border-right: 1px solid black;
-        border-bottom-left-radius: 15px;
-        background-color: rgba(4, 88, 224, 0.837);
-        color: white;
-        transition: 1s;
-      }
-      #buttonEnroll:hover {
-        background-color: black;
-      }
-      #buttonShare {
-        background-color: white;
-        border-bottom-right-radius: 15px;
-        border-bottom: 1px solid black;
-      }
-    </style>
-  </head>
-  <body>
-    <div id="container">
-      <!-- card-1 -->
-      <div id="cart">
-        <!-- card-header -->
-        <div id="card-header">
-          <img src="../assets/image/SimpleImage/awsImage.png" alt="aws image" />
-        </div>
 
-        <!-- card-body -->
-        <div id="card-body">
-          <div id="heading">
-            <h2>Amazon Web Services (AWS)</h2>
-          </div>
-          <div id="star" style="color: rgb(220, 189, 33)">
-            <span class="bi bi-star-fill"></span>
-            <span class="bi bi-star-fill"></span>
-            <span class="bi bi-star-fill"></span>
-            <span class="bi bi-star-fill"></span>
-            <span class="bi bi-star-half"></span>
-            <span style="color: black"> 4.5</span>
-          </div>
-          <div id="information">
-            <span class="bi bi-clock"
-              >&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span
-            ><br />
-            <span class="bi bi-person">&nbsp;&nbsp;&nbsp;by: Mr. Avinash</span
-            ><br />
-            <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
-          </div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../node_modules/bootstrap-icons/font/bootstrap-icons.css" />
+  <title>Naresh-It cart page</title>
+  <style>
+    body {
+      margin: 0px;
+      padding: 0px;
+    }
 
-        <!-- card-footer -->
-        <div id="card-footer" style="margin-top: 58px">
-          <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
-          <button id="buttonShare" type="submit" name="sh">
-            <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
-          </button>
+    #container {
+      width: 100%;
+      height: 400px;
+      display: flex;
+      gap: 15px;
+      flex-wrap: wrap;
+    }
+
+    #cart {
+      width: 300px;
+      height: 500px;
+      margin-top: 50px;
+      margin-left: 30px;
+      border-radius: 17px;
+      transition: 1s;
+    }
+
+    #cart:hover {
+      box-shadow: 6px 20px 50px gray;
+    }
+
+    img {
+      width: 100%;
+      height: 200px;
+      border-top-left-radius: 15px;
+      border-top-right-radius: 15px;
+    }
+
+    #card-body {
+      margin-left: 20px;
+    }
+
+    #star {
+      color: rgba(0, 0, 0, 0.8);
+      margin-bottom: 20px;
+    }
+
+    #information {
+      color: rgba(0, 0, 0, 0.7);
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    #card-footer {
+      margin-top: 85px;
+      border-top: 0.1px solid black;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+      display: grid;
+      grid-template-columns: 6fr 6fr;
+    }
+
+    button {
+      height: 39px;
+      border: none;
+      font-weight: 300;
+    }
+
+    #buttonEnroll {
+      border-right: 1px solid black;
+      border-bottom-left-radius: 15px;
+      background-color: rgba(4, 88, 224, 0.837);
+      color: white;
+      transition: 1s;
+    }
+
+    #buttonEnroll:hover {
+      background-color: black;
+    }
+
+    #buttonShare {
+      background-color: white;
+      border-bottom-right-radius: 15px;
+      border-bottom: 1px solid black;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="container">
+    <!-- card-1 -->
+    <div id="cart">
+      <!-- card-header -->
+      <div id="card-header">
+        <img src="../../assets/image/SimpleImage/awsImage.png" alt="aws image" />
+      </div>
+
+      <!-- card-body -->
+      <div id="card-body">
+        <div id="heading">
+          <h2>Amazon Web Services (AWS)</h2>
+        </div>
+        <div id="star" style="color: rgb(220, 189, 33)">
+          <span class="bi bi-star-fill"></span>
+          <span class="bi bi-star-fill"></span>
+          <span class="bi bi-star-fill"></span>
+          <span class="bi bi-star-fill"></span>
+          <span class="bi bi-star-half"></span>
+          <span style="color: black"> 4.5</span>
+        </div>
+        <div id="information">
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span><br />
+          <span class="bi bi-person">&nbsp;&nbsp;&nbsp;by: Mr. Avinash</span><br />
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
         </div>
       </div>
 
-      <!-- card-2 -->
-      <div id="cart">
-        <!-- card-header -->
-        <div id="card-header">
-          <img src="./assets/image/DevOpsImage.png" alt="DevOpsImage" />
-        </div>
-
-        <!-- card-body -->
-        <div id="card-body">
-          <div id="heading">
-            <h2>DevOps</h2>
-          </div>
-          <div id="star">
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span style="color: black"> 0</span>
-          </div>
-          <div id="information">
-            <span class="bi bi-clock"
-              >&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span
-            ><br />
-            <span class="bi bi-person">&nbsp;&nbsp;&nbsp;by: Mr. Prashant</span
-            ><br />
-            <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
-          </div>
-        </div>
-
-        <!-- card-footer -->
-        <div id="card-footer">
-          <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
-          <button id="buttonShare" type="submit" name="sh">
-            <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
-          </button>
-        </div>
-      </div>
-
-      <!-- card-3 -->
-      <div id="cart">
-        <!-- card-header -->
-        <div id="card-header">
-          <img src="./assets/image/powerBIImage.png" alt="powerBIImage" />
-        </div>
-
-        <!-- card-body -->
-        <div id="card-body">
-          <div id="heading">
-            <h2>Power BI</h2>
-          </div>
-          <div id="star">
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span style="color: black"> 0</span>
-          </div>
-          <div id="information">
-            <span class="bi bi-clock"
-              >&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span
-            ><br />
-            <span class="bi bi-person">&nbsp;&nbsp;&nbsp;by: Miss. Mohana</span
-            ><br />
-            <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
-          </div>
-        </div>
-
-        <!-- card-footer -->
-        <div id="card-footer">
-          <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
-          <button id="buttonShare" type="submit" name="sh">
-            <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
-          </button>
-        </div>
-      </div>
-
-      <!-- card-4 -->
-      <div id="cart">
-        <!-- card-header -->
-        <div id="card-header">
-          <img src="./assets/image/reactJsImage.png" alt="reactJsImage" />
-        </div>
-
-        <!-- card-body -->
-        <div id="card-body">
-          <div id="heading">
-            <h2>React JS</h2>
-          </div>
-          <div id="star">
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span class="bi bi-star"></span>
-            <span style="color: black"> 0</span>
-          </div>
-          <div id="information">
-            <span class="bi bi-clock"
-              >&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span
-            ><br />
-            <span class="bi bi-person"
-              >&nbsp;&nbsp;&nbsp;by: Mr. Sudhakar Sharma</span
-            ><br />
-            <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
-          </div>
-        </div>
-
-        <!-- card-footer -->
-        <div id="card-footer">
-          <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
-          <button id="buttonShare" type="submit" name="sh">
-            <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
-          </button>
-        </div>
+      <!-- card-footer -->
+      <div id="card-footer" style="margin-top: 58px">
+        <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
+        <button id="buttonShare" type="submit" name="sh">
+          <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
+        </button>
       </div>
     </div>
-  </body>
+
+    <!-- card-2 -->
+    <div id="cart">
+      <!-- card-header -->
+      <div id="card-header">
+        <img src="../../assets/image/SimpleImage/DevOpsImage.png" alt="DevOpsImage" />
+      </div>
+
+      <!-- card-body -->
+      <div id="card-body">
+        <div id="heading">
+          <h2>DevOps</h2>
+        </div>
+        <div id="star">
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span style="color: black"> 0</span>
+        </div>
+        <div id="information">
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span><br />
+          <span class="bi bi-person">&nbsp;&nbsp;&nbsp;by: Mr. Prashant</span><br />
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
+        </div>
+      </div>
+
+      <!-- card-footer -->
+      <div id="card-footer">
+        <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
+        <button id="buttonShare" type="submit" name="sh">
+          <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
+        </button>
+      </div>
+    </div>
+
+    <!-- card-3 -->
+    <div id="cart">
+      <!-- card-header -->
+      <div id="card-header">
+        <img src="../../assets/image/SimpleImage/powerBIImage.png" alt="powerBIImage" />
+      </div>
+
+      <!-- card-body -->
+      <div id="card-body">
+        <div id="heading">
+          <h2>Power BI</h2>
+        </div>
+        <div id="star">
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span style="color: black"> 0</span>
+        </div>
+        <div id="information">
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span><br />
+          <span class="bi bi-person">&nbsp;&nbsp;&nbsp;by: Miss. Mohana</span><br />
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
+        </div>
+      </div>
+
+      <!-- card-footer -->
+      <div id="card-footer">
+        <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
+        <button id="buttonShare" type="submit" name="sh">
+          <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
+        </button>
+      </div>
+    </div>
+
+    <!-- card-4 -->
+    <div id="cart">
+      <!-- card-header -->
+      <div id="card-header">
+        <img src="../../assets/image/SimpleImage/reactJsImage.png" alt="reactJsImage" />
+      </div>
+
+      <!-- card-body -->
+      <div id="card-body">
+        <div id="heading">
+          <h2>React JS</h2>
+        </div>
+        <div id="star">
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span class="bi bi-star"></span>
+          <span style="color: black"> 0</span>
+        </div>
+        <div id="information">
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Start Date : 29 Jul 2024</span><br />
+          <span class="bi bi-person">&nbsp;&nbsp;&nbsp;by: Mr. Sudhakar Sharma</span><br />
+          <span class="bi bi-clock">&nbsp;&nbsp;&nbsp;Dur: 60 Days</span>
+        </div>
+      </div>
+
+      <!-- card-footer -->
+      <div id="card-footer">
+        <button id="buttonEnroll" type="submit" name="en">ENROLL</button>
+        <button id="buttonShare" type="submit" name="sh">
+          <span class="bi bi-share"></span>&nbsp;&nbsp;SHARE
+        </button>
+      </div>
+    </div>
+  </div>
+</body>
+
 </html>
