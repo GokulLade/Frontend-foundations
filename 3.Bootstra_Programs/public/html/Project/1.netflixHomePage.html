@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+
+    <style>
+        body {
+            background-image: url(../../assets/image/SimpleImage/netflixBackgroundImage.jpg);
+            background-size: cover;
+            color: white;
+        }
+
+        .back-color {
+            width: 100%;
+            height: 664px;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        header {
+            padding: 1rem 9rem;
+        }
+
+        .button-1,
+        .button-1:hover {
+            background-color: transparent;
+            border: 0.01rem solid gray;
+        }
+
+        .title {
+            font-size: 35px;
+            color: red;
+            font-weight: bold;
+        }
+
+        .main-title {
+            width: 670px;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 56px;
+            font-weight: 900;
+            line-height: 70px;
+        }
+
+        .main-subtitle {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 25px;
+            font-weight: 400;
+        }
+
+        .register-title {
+            font-size: 20px;
+            font-weight: 100;
+        }
+
+        .dropdown-section {
+            width: 100%;
+            height: 700px;
+            background-color: black;
+            padding: 3rem 7rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="back-color">
+        <header class="d-flex justify-content-between">
+            <div class="logo">
+                <img src="../../assets/image/SimpleImage/netflixLogo.png" width="130px" height="49px" alt="netflixLogo">
+            </div>
+            <div>
+                <div class="d-flex">
+                    <div class="dropdown me-2">
+                        <button class="btn btn-dark dropdown-toggle px-4 button-1" data-bs-toggle="dropdown">
+                            <span class="bi bi-translate"></span>
+                            English
+                        </button>
+                        <div class="dropdown-menu collapse">
+                            <div class="dropdown-item active">
+                                <span>English</span>
+                            </div>
+                            <div class="dropdown-item">
+                                <span>हिंदी</span>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-danger">Sign in</button>
+                </div>
+            </div>
+        </header>
+
+        <section class="d-flex justify-content-center align-items-center text-center" style="height: 580px;">
+            <div>
+                <p class="main-title">Unlimited movies, TV shows and more</p>
+                <p class="main-subtitle">watch anywhere. Cancel anytime.</p>
+                <div>
+                    <p class="register-title">Ready to watch? Enter your email to create or restart your membership.</p>
+                    <div class="input-group input-group-lg">
+                        <input type="email" placeholder="Your email address" class="form-control">
+                        <button class="btn btn-danger ">
+                            Get Started
+                            <span class="bi bi-chevron-right"></span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="../../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
