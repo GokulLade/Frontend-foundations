@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../node_modules/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <title>Static Nav Bar</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <h2 class="text-center">Aries Business </h2>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item active">
+                <button data-bs-toggle="tab" data-bs-target="#home" class="nav-link">Home</button>
+            </li>
+            <li class="nav-item">
+                <button data-bs-toggle="tab" data-bs-target="#about" class="nav-link">About</button>
+            </li>
+            <li class="nav-item">
+                <button data-bs-toggle="tab" data-bs-target="#gallery" class="nav-link">Gallery</button>
+            </li>
+            <li class="nav-item ">
+                <button data-bs-toggle="tab" data-bs-target="#contact" class="nav-link">Contact</button>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+            <div class="tab-pane active show fade" id="home">
+                <h3>Welcome To Aries Business</h3>
+                <img src="../../assets/image/SimpleImage/NaturalImage.jpg" alt="girlsImage" width="360px"
+                    height="200px">
+            </div>
+
+            <div class="tab-pane fade" id="about">
+                <h3>All About Aria Business..</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit qui veniam dolores consequuntur cumque
+                    dignissimos ex, atque delectus? Nostrum dicta, enim omnis a alias commodi non aut id excepturi sit
+                    suscipit eius maiores cum culpa architecto. Voluptatum debitis quaerat laborum in amet quam, ex
+                    perspiciatis harum vitae iste. Molestias quia quasi impedit quisquam deserunt quibusdam cum quas aut
+                    illo? Nobis, fuga eos. Natus culpa numquam aspernatur deleniti veritatis dolorem beatae, expedita
+                    omnis voluptatibus nisi delectus recusandae ea praesentium illo pariatur esse qui consequatur?
+                    Eveniet nesciunt laudantium, a distinctio accusantium dicta, nam fuga ab maxime neque iste placeat
+                    sapiente sit harum!</p>
+            </div>
+
+            <div class="tab-pane fade" id="gallery">
+                <h3>Our Last Year Photos...</h3>
+                <div class="d-flex">
+                    <img src="../../assets/image/SimpleImage/Girlmage.jpg" alt="" width="100px" height="100px">
+                    <img src="../../assets/image/SimpleImage/codingBoy.png" alt="" width="100px" height="100px">
+                    <img src="../../assets/image/SimpleImage/Laptop.jpg" alt="" width="100px" height="100px">
+                    <img src="../../assets/image/SimpleImage/NaturalImage.jpg" alt="" width="100px" height="100px">
+                </div>
+            </div>
+
+            <div class="tab-pane fade" id="contact">
+                <h3>Contact Us...</h3>
+                <form action="">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" placeholder="Name" class="form-control">
+                    <label for="name" class="form-label">Email</label>
+                    <input type="email" placeholder="Email" class="form-control mb-3">
+
+                    <button class="btn btn-primary w-100">Submit</button>
+                </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <script src="../../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
