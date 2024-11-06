@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Css Selector</title>
+    <script>
+        function bodyLoad() {
+            document.querySelector("img").src = "../../assets/image/SimpleImage/Computer.jpg";
+            document.querySelector("#btn1").value = "Register";
+            document.querySelector(".btn2").value = "Login";
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <div>
+        <img src=" " alt="" width="100px" height="100px">
+        <form action="">
+            <h1>Register</h1>
+            Enter Name <input type="text"> <input type="button" id="btn1">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <h1>Login</h1>
+            Email <input type="email"> <input type="button" class="btn2">
+        </form>
+    </div>
+</body>
+
+</html>

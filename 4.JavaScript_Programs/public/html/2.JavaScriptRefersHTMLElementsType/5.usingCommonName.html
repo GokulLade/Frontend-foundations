@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Common name</title>
+    <script>
+        function bodyLoad() {
+            result = document.getElementsByName("pay");
+            alert("Total payment method are : " + result.length);
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <fieldset>
+        <legend>Payment Method</legend>
+        <input type="radio" name="pay"> Cash
+        <input type="radio" name="pay"> UPI
+        <input type="radio" name="pay"> Credit card
+    </fieldset>
+</body>
+
+</html>
