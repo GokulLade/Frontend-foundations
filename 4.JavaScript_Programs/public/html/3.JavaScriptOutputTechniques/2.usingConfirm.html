@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using confirm Method</title>
+    <script>
+        function displayInfo() {
+            if (confirm("Conform again you want to delete the Record..")) {
+                alert("Record Deleted..!")
+            }
+            else {
+                alert("You are cancel it..!")
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>For Deleting the record </h1>
+        <button onclick="displayInfo()">click here</button>
+    </div>
+
+</body>
+
+</html>

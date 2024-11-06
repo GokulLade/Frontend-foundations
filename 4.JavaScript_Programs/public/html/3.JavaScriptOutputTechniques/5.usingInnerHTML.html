@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using innerHTML </title>
+    <script>
+        function displayInfo() {
+            if (confirm("Conform again you want to delete the Record..")) {
+                document.querySelector("h2").innerHTML = "<font color='red'>Record Deleted..!!</font>";
+            }
+            else {
+                document.querySelector("h2").innerHTML = "<font color='green'>You are Cancel..!</font>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div>
+        <h1>For Deleting the record </h1>
+        <button onclick="displayInfo()">click here</button>
+        <h2></h2>
+    </div>
+
+</body>
+
+</html>
