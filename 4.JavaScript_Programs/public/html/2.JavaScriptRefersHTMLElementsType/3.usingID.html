@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using Id</title>
+    <script>
+        function bodyLoad() {
+            pic.src = "../../assets/image/SimpleImage/Computer.jpg";
+            btn1.value="Register";
+           btn2.value="Login";
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <div>
+        <img src=" " alt="" id="pic" width="100px" height="100px">
+        <form action="">
+            <h1>Register</h1>
+            Enter Name <input type="text"> <input type="button" id="btn1">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <h1>Login</h1>
+            Email <input type="email"> <input type="button" id="btn2">
+        </form>
+    </div>
+</body>
+
+</html>

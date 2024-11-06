@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Using DOM hierarchy</title>
+    <script>
+        function bodyLoad() {
+            window.document.images[0].src = "../../assets/image/SimpleImage/Computer.jpg";
+            window.document.forms[0].elements[1].value="Register";
+            window.document.forms[1].elements[1].value="Login";
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <div>
+        <img src=" " alt="" width="100px" height="100px">
+        <form action="">
+            <h1>Register</h1>
+            Enter Name <input type="text"> <input type="button">
+        </form>
+    </div>
+    <div>
+        <form action="">
+            <h1>Login</h1>
+            Email <input type="email"> <input type="button">
+        </form>
+    </div>
+</body>
+
+</html>
