@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input using Form Elements</title>
+    <link rel="stylesheet" href="../../../../node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script>
+        function submitClick() {
+            document.getElementById("detailContainer").style.display = "block";
+            document.getElementById("registerBox").style.display = "none";
+            document.getElementById("lblName").innerHTML = document.getElementById("txtName").value;
+            document.getElementById("lblPrice").innerHTML = document.getElementById("txtPrice").value;
+            document.getElementById("lblCity").innerHTML = document.getElementById("lsdCities").value;
+
+            stock = " ";
+            stockName = document.getElementById("checkBox");
+            if (stockName.checked) {
+                stock = "Available";
+            }
+            else {
+                stock = "Not Available";
+            }
+
+            document.getElementById("lblStock").innerHTML = stock;
+        }
+    </script>
+</head>
+
+<body>
+    <div class="container mt-5 w-50" id="registerBox">
+        <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#registerProduct">Add
+            Product</button>
+    </div>
+
+    <div class="modal" id="registerProduct">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2 class="modal-title text-center w-100">Enter Product Detail</h2>
+                    <button class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-5">
+                    <dl>
+                        <dt>Product Name :</dt>
+                        <dd><input type="text" name="name" class="form-control" id="txtName" class="w-75"></dd>
+                        <dt>Product Price :</dt>
+                        <dd><input type="number" name="pass" class="form-control" id="txtPrice" class="w-75"></dd>
+                        <dt>Shipped To :</dt>
+                        <dd>
+                            <select class="form-select" id="lsdCities">
+                                <option>Delhi</option>
+                                <option>Hyderabad</option>
+                            </select>
+                        </dd>
+                        <dt>Stock</dt>
+                        <dd class="form-switch">
+                            <input type="checkbox" class="form-check-input" id="checkBox">Available
+                        </dd>
+                    </dl>
+                </div>
+                <div class="modal-footer ">
+                    <button class="btn btn-primary" onclick="submitClick()" data-bs-dismiss="modal">Add</button>
+                    <button class="btn btn-danger" data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="detailContainer" style="display: none;">
+
+        <h1> Product Details </h1>
+        <div>
+            <table frame="box" rules="all">
+                <tbody>
+                    <tr>
+                        <td>Name: </td>
+                        <td id="lblName"></td>
+                    </tr>
+                    <tr>
+                        <td>Price: </td>
+                        <td id="lblPrice"></td>
+                    </tr>
+                    <tr>
+                        <td>Shipped: </td>
+                        <td id="lblCity"></td>
+                    </tr>
+                    <tr>
+                        <td>Stock: </td>
+                        <td id="lblStock"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+
+        <!-- <h2>Product Details</h2>
+        <dl class="row">
+            <dt class="col-3">Name</dt>
+            <dd class="col-9" id="lblName"></dd>
+            <dt class="col-3">Price</dt>
+            <dd class="col-9" id="lblPrice"></dd>
+            <dt class="col-3">Shipped</dt>
+            <dd class="col-9" id="lblCity"></dd>
+            <dt class="col-3">Stock</dt>
+            <dd class="col-9" id="lblStock"></dd>
+        </dl> -->
+        <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#registerProduct">Edit</button>
+    </div>
+
+    <script src="../../../../../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../../../../../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
