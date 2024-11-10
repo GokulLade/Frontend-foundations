@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let a=20; // Global scope
+
+        function f1()
+        {
+            window.x=10; //global scope variable in function
+            document.write(a+"<br>");
+            document.write(x+"<br>");
+        }
+        function f2()
+        {
+            document.write(a+"<br>");
+            document.write(x);
+        }
+        f1();
+        f2();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

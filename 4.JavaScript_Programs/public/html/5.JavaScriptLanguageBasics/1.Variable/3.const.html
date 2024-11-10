@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of const</title>
+
+    <script type="text/javascript">
+        function f1()
+        {
+            const x =10; //allow only initialization
+            {
+                const y="Gokul";
+                // y="lade"; error assignment not possible
+                document.write(x);
+            }
+            document.write(y); // error only block scope
+        }
+        f1();
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

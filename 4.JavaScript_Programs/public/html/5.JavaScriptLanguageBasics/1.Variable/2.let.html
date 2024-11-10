@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of let</title>
+    <script>
+        
+        function f1()
+        {
+            let a=10;
+
+            {
+                let b=20;
+                // let b=20; not allow
+                b=20;
+                document.write("a = "+a);
+            }
+            document.write("b = "+b); // error because we declare in a block 
+        }
+        f1();
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
