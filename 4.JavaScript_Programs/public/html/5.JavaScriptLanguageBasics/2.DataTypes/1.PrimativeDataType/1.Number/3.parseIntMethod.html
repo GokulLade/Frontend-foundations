@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of parseInt method</title>
+    <script>
+        function submitClick()
+        {
+            var userNumber=prompt("Enter the Number");
+
+            var yourNumber=20;
+
+            //Use of Parse Int method
+            var result=(yourNumber+ parseInt(userNumber));
+
+            document.getElementById("result").innerHTML=result;
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <button onclick="submitClick()">Add Two Number</button>
+        <p>Result : <span id="result"></span></p>
+    </div>
+</body>
+</html>

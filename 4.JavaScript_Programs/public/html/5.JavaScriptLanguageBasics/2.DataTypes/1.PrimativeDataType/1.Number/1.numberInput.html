@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number Input</title>
+    <script>
+        function submitClick()
+        {
+            var phoneNumber=document.getElementById("phno").value;
+
+            document.getElementById("phoneNo").innerHTML=phoneNumber;
+        }
+        submitClick();
+    </script>
+
+</head>
+<body>
+    
+    <input type="text" placeholder="Enter phone number" id="phno">
+    <button onclick="submitClick()">Submit</button>
+
+    <p>Your Phone Number is: <span id="phoneNo"></span></p>
+
+
+</body>
+</html>

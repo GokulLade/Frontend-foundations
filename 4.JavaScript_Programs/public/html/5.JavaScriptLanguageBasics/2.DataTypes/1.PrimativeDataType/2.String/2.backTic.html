@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Back Tik use</title>
+    <script>
+        function clickOk(){
+            var userName=prompt("Enter Your Name");
+            var userEmail=prompt("Enter Email");
+
+            document.getElementById("info").innerHTML=`Your Name is : ${userName} <br> Your Email is : ${userEmail}`;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="clickOk()">
+        Click here for user Information
+    </button>
+    <p id="info"></p>
+    
+</body>
+</html>

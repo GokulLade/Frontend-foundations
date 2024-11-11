@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use of isNaN method</title>
+    <script>
+        function submitClick()
+        {
+            var age=prompt("Enter Your Age","Please Enter Age");
+
+            if(isNaN(age))
+            {
+                document.write("Please Enter the Numeric value");
+            }
+            document.getElementById("result").innerText=age;
+        }
+    </script>
+
+</head>
+<body>
+    <div>
+        <button onclick="submitClick()">Enter Your Age</button>
+        <p>Your Age is: <span id="result"></span></p>
+    </div>
+</body>
+</html>
