@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Dynamically Bg color change</title>
+
+    <script>
+        function changeTheme()
+        {
+            var theme=document.getElementById("theme");
+            var form=document.getElementById("formContainer");
+
+            if(theme.checked)
+            {
+                form.className="dark-theme";
+                document.querySelector("button").className="btn btn-dark";
+            }
+            else
+            {
+                form.className="light-theme";
+                document.querySelector("button").className="btn btn-primary";
+            }
+
+        }
+    </script>
+
+    <style>
+        .form{
+            width: 350px;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .dark-theme{
+            width: 350px;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: black;
+            color: white;
+        }
+        .light-theme{
+            width: 350px;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: white;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="form border border-1 border-black rounded-1" id="formContainer">
+            <div class="form-switch">
+                <input type="checkbox" name="theme" id="theme" class="form-check-input" onchange="changeTheme()"> <span>Dark Theme</span> 
+            </div>
+
+            <h1>Register User</h1>
+            <dl>
+                <dt>Enter User Name: </dt>
+                <dd><input type="text" id=""></dd>
+                <dt>Enter Password: </dt>
+                <dd><input type="password" id=""></dd>
+            </dl>
+            <button class="btn btn-primary w-25"> Submit </button>
+        </div>
+    </div>
+</body>
+</html>

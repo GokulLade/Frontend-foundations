@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Handling</title>
+    <script>
+        function clickOk(){
+            var color=document.getElementById("txtColor").value;
+            document.getElementById("txtArea").innerHTML="Welcome to JavaScript".fontcolor(color);
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>Color Change</legend>
+            <dl>
+                <dt>Please Select the text Color</dt>
+                <dd>
+                    <select name="txtColor" id="txtColor">
+                        <option>Green</option>
+                        <option>Yellow</option>
+                        <option>Black</option>
+                        <option>Pink</option>
+                        <option>Orange</option>
+                    </select>
+                </dd>
+            </dl>
+            <button onclick="clickOk()">Submit</button>
+        </fieldset>
+
+        <div>
+            <p id="txtArea"></p>
+        </div>
+    </div>
+</body>
+</html>

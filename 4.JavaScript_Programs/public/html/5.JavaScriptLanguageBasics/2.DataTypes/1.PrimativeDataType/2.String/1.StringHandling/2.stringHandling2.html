@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Handling</title>
+    <script>
+        function clickOk(){
+            var userName=document.getElementById("txtName").value;
+            var userPassword=document.getElementById("txtPassword").value;
+
+            if((userName.length>=4 && userName.length<=10))
+            {
+                document.getElementById("txtNameArea").innerHTML="User name is Valid".fontcolor('green').fontsize('1');
+            }
+            else{
+                document.getElementById("txtNameArea").innerHTML="Please Enter the user name min 4 char and max 10 char".fontcolor('Red').fontsize('1');
+            }
+
+            if((userPassword.length>=8 && userPassword.length<=16))
+            {
+                document.getElementById("txtPassArea").innerHTML="Password is Valid".fontcolor('green').fontsize('1');
+            }
+            else{
+                document.getElementById("txtPassArea").innerHTML="Please Enter the Password min 8 char and max 16 char".fontcolor('Red').fontsize('1');
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <fieldset>
+            <legend>User Information</legend>
+            <dl>
+                <dt>User Name : </dt>
+                <dd><input type="text" id="txtName" placeholder="Enter Your Name"></dd>
+                <dd id="txtNameArea"></dd>
+                <dt>Password : </dt>
+                <dd><input type="password" id="txtPassword" placeholder="Enter Password"></dd>
+                <dd id="txtPassArea"></dd>
+            </dl>
+            <button onclick="clickOk()">Submit</button>
+        </fieldset>
+    </div>
+    
+</body>
+</html>
