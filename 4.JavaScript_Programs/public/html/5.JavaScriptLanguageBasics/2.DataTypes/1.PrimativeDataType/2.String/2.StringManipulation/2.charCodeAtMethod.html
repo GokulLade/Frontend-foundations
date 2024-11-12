@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onKeyUp()
+        {
+            "use strick"
+            var userName =document.getElementById("txtName").value;
+
+            if(!((userName.charCodeAt(0)>=65 )&&(userName.charCodeAt(0)<=90)))
+            {
+                document.getElementById("txtArea").innerHTML="User Name Start with Capital Letter".fontcolor('red');
+            }
+            else{
+                document.getElementById("txtArea").innerHTML=" ";
+            }
+            
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>User Information</legend>
+        <dl>
+            <dt>Enter User Name</dt>
+            <dd><input type="text" name="" id="txtName" onkeyup="onKeyUp()"></dd>
+            <dd id="txtArea"></dd>
+        </dl>
+        <button>Submit</button>
+    </fieldset>
+</body>
+</html>

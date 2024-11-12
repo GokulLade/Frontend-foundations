@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function onBlur()
+        {
+            "use strick"
+            var userName =document.getElementById("txtName").value;
+
+            var firstLetter=userName.charAt(0).toUpperCase();
+            var remainChar=userName.substr(1).toLowerCase();
+
+            var result=firstLetter+remainChar;
+
+            console.log(result);
+            document.getElementById("txtName").value=result;
+        }
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>User Information</legend>
+        <dl>
+            <dt>Enter User Name</dt>
+            <dd><input type="text" name="" id="txtName" onblur="onBlur()"></dd>
+        </dl>
+        <button>Submit</button>
+    </fieldset>
+</body>
+</html>
