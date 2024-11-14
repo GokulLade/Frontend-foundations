@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+    <script>
+        function clickOk() {
+            var password = document.getElementById("pass").value;
+            var msg = document.getElementById("msg");
+
+            var expression = /((?=.*[A-Z])\w{4,15})/;
+
+            if (password.match(expression)) {
+                msg.innerText = "Valid Password";
+                msg.className = "text-success";
+            }
+            else {
+                msg.innerText = "InValid Password";
+                msg.className = "text-danger";
+            }
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <h1>Password Verification </h1>
+    <dl>
+        <dt>Enter your Password Number:</dt>
+        <dd> <input type="text" id="pass" onkeyup="clickOk()"></dd>
+        <dd id="msg"></dd>
+    </dl>
+</body>
+
+</html>

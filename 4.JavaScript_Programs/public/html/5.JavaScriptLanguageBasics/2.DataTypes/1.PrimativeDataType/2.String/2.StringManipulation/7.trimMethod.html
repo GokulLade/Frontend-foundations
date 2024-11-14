@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clickOk()
+        {
+            var name=document.getElementById("name").value;
+            var msg=document.getElementById("msg");
+            if(name.trim()=="Gokul Lade")
+            {
+                msg.innerHTML="Valid User Name".fontcolor('green');
+            }
+            else
+            {
+                msg.innerHTML="Invalid User Name".fontcolor('red');
+            }
+        }
+    </script>
+</head>
+<body>
+    <dl>
+        <dt>Enter the name</dt>
+        <dd><input type="text" name="name" id="name" onkeyup="clickOk()"></dd>
+        <dd id="msg"></dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+    <script>
+        function clickOk() {
+            var number = document.getElementById("number").value;
+            var img = document.getElementById("img");
+
+            if (number.startsWith("4444")) {
+                img.src = "../../../../../../assets/image/SimpleImage/matserCard.jpg";
+            }
+            else if (number.endsWith("2222")) {
+                img.src = "../../../../../../assets/image/SimpleImage/Visa-logo.png";
+            }
+            else {
+                img.src = "";
+                img.alt = "N/A";
+            }
+        }
+    </script>
+</head>
+
+<body class="container-fluid">
+    <div class="input-group mt-5 w-50">
+        <input type="text" class="form-control" id="number" placeholder="Enter card number" onkeyup="clickOk()">
+        <img class="input-group-text" id="img" width="50" height="50">
+    </div>
+</body>
+
+</html>

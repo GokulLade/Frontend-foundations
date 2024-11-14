@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function checkEmail1()
+        {
+
+            //Finding @ present is not in email
+            var email=document.getElementById("email1").value;
+            var msg=document.getElementById("msg1");
+            if(email.indexOf('@')<2)// Check before 2 char present or not
+            {
+                msg.innerText="Invalid Email";
+            }
+            else{
+                msg.innerText=" ";
+            }
+        }
+
+        function checkEmail2()
+        {
+            //Finding gmail.com present is not in email
+            var email=document.getElementById("email2").value;
+            var msg=document.getElementById("msg2");
+            if(email.lastIndexOf("gmail.com")<2)
+            {
+                msg.innerText="Invalid Email";
+            }
+               
+            else{
+                msg.innerText=" ";
+            }
+        }
+    </script>
+</head>
+<body>
+
+    Enter the Email: <input type="text" id="email1" onkeyup="checkEmail1()">
+    <div>Output : <span id="msg1"></span></div>
+
+    Enter the Email: <input type="text" id="email2" onkeyup="checkEmail2()">
+    <div>Output : <span id="msg2"></span></div>
+    
+</body>
+</html>

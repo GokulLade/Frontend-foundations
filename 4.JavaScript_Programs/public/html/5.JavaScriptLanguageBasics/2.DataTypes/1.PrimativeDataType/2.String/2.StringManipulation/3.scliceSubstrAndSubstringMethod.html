@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clickOk()
+        {
+            var userName=document.getElementById("txtname").value;
+
+            document.getElementById("msg-1").innerText=userName.slice(1);
+            document.getElementById("msg-2").innerText=userName.substr(4,7);
+            document.getElementById("msg-3").innerText=userName.substring(7,0);
+        }
+    </script>
+</head>
+<body>
+        Enter the name: <input type="text" id="txtname">
+        <div>Slice Method Output : <span id="msg-1"></span></div>
+        <div>SubStr Method Output : <span id="msg-2"></span></div>
+        <div>Substring Method Output : <span id="msg-3"></span></div>
+        <button onclick="clickOk()">Submit</button>
+</body>
+</html>

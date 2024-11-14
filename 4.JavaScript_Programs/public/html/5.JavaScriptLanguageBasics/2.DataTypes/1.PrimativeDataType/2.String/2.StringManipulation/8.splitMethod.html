@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function clickOk() {
+            var number = document.getElementById("number").value;
+
+            var result = number.split(',');
+
+            document.getElementById("msg").innerText = result[0];
+        }
+    </script>
+</head>
+
+<body>
+    <dl>
+        <dt>Enter your Family phone number with and Separate them with Coma :</dt>
+        <dd><input type="text" name="number" id="number" onkeyup="clickOk()"></dd>
+        <dd>You Entered First Number is: <span id="msg"></span></dd>
+    </dl>
+</body>
+
+</html>
