@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../../../../../../node_modules/bootstrap/dist/css/bootstrap.css">
+    <title>Document</title>
+    <script>
+
+        var products = ["Mobile", "Laptop", "Desktop", "Keyboard"];
+
+        function bodyLoad() {
+            for (var product of products) {
+                var li = document.createElement("li");
+                li.innerText = product;
+                document.querySelector("ol").appendChild(li);
+
+                var option = document.createElement("option");
+                option.innerText = product;
+                document.querySelector("select").appendChild(option);
+
+                var td=document.createElement("td");
+                var tr=document.createElement("tr");
+                td.innerHTML=product;
+                tr.appendChild(td);
+                document.querySelector("tbody").appendChild(tr);
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <div class="container-fluid">
+        <div class="row">
+            <h1 class="text-center text-bg-danger text-white">Array</h1>
+            <div class="col">
+                <h2>Product Details in List</h2>
+                <ol>
+
+                </ol>
+            </div>
+
+            <div class="col">
+                <h2>Product Details in Select Option</h2>
+                <select class="form-control">
+
+                </select>
+            </div>
+
+            <div class="col">
+                <h2>Product Details in Table</h2>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>Products</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
