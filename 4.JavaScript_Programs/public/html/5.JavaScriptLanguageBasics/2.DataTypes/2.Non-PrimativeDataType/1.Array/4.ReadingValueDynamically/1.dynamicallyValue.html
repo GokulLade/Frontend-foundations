@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+      var pathArray=["../../../../../../assets/image/SimpleImage/Computer.jpg",
+                "../../../../../../assets/image/SimpleImage/Laptop.jpg",
+                "../../../../../../assets/image/SimpleImage/Mobile.jpg"
+                ];
+    
+        function bodyLoad()
+        {
+            for(var path of pathArray)
+            {
+                var pic=document.createElement("img");
+                pic.src=path;
+                pic.width=300;
+                pic.height=300;
+
+                document.getElementById("container").append(pic);
+
+                var option=document.createElement("option");
+                option.text=path;
+
+                document.querySelector("select").append(option);
+            
+            }
+        }
+    
+
+    </script>
+</head>
+<body onload="bodyLoad()">
+
+    <div id="container">
+
+    </div>
+    <select></select>
+</body>
+</html>
