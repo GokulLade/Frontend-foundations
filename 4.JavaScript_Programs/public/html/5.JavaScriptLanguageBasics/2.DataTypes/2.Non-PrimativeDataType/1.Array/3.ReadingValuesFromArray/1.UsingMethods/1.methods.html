@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+        var price=[3000,4200,2200,1000,12000];
+
+        function getValue(value)
+        {
+            return value>3000;
+        }
+        //toString()
+        document.write(`Using toString Method: ${price.toString()}</br></br>`);
+
+        //join()
+        document.write(`Using Join Method: ${price.join("->")}</br></br>`);
+
+        //slice()
+        document.write(`Using slice Method: ${price.slice(1,4)}</br></br>`);
+
+        //filter()
+        document.write(`Using filter Method: ${price.filter(getValue)}</br></br>`);
+
+        //find()
+        document.write(`Using find Method: ${price.find(getValue)}</br></br>`);
+
+        //map()
+        document.write("Using Map iterator: ")
+        price.map(function (value){
+            document.write(`<li>${value}</li>`);
+        })
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>
