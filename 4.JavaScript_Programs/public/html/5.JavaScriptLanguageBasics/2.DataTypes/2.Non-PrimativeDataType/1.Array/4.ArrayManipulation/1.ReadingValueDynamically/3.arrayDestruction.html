@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var value=["Gokul",function(){document.write("Login Success..!")},function(){document.write("Login Fail Try again..!")}];
+        var[pass,Success,Fail]=value;
+
+        var userInput=prompt("Enter Password..");
+
+        if(pass==userInput)
+        {
+            Success();
+        }
+        else
+        {
+            Fail();
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
