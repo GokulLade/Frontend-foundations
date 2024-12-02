@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        //Declaring Object Template
+        let product={
+            Name:"",
+            Price:0,
+            Stock:false,
+            Qty:0,
+            Cities:[],
+            Rating:{Rate:0,Count:0},
+            "Total": function()
+            {
+                return this.Qty *this.Price;
+            },
+            "Print": function()
+            {
+                document.write(`<br> Name = ${this.Name}<br> Price = ${this.Price}<br>  Stock= ${this.Stock} <br> Qty = ${this.Qty}<br> 
+                Cities = ${this.Cities.toString()}<br>  Rating = ${this.Rating.Rate},${this.Rating.Count}<br>  Total = ${this.Total()}`);
+            }
+        }
+
+        //Giving value to the object base on the product
+        document.write("Tv Product Details: ");
+        product.Name="TV";
+        product.Price=3000;
+        product.Stock=true;
+        product.Qty=12;
+        product.Cities=["Hyd","Mumbai"];
+        product.Rating.Rate=4.3;
+        product.Rating.Count=500;
+        product.Print();
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

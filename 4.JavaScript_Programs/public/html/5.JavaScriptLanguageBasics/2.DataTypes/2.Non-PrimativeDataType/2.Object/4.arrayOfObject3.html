@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON</title>
+
+    <script>
+        var data = [
+            { Category: "Electronics", Products: ["Tv", "Mobile"] },
+            { Category: "Footwear", Products: ["Nike Casuals", "Lee Boot"] }
+        ];
+
+        function bodyLoad() {
+            for (var item of data) 
+            {
+                var li = document.createElement("li");
+                li.innerHTML = item.Category;
+                document.querySelector("ol").appendChild(li);
+                for(var product of item.Products)
+                {
+                    var olInner=document.createElement("ol");
+                    var liInner=document.createElement("li");
+                    liInner.innerHTML=product;
+                    olInner.appendChild(liInner);
+                    document.querySelector("ol").appendChild(olInner);
+                }
+
+            }
+
+        }
+    </script>
+</head>
+
+<body onload="bodyLoad()">
+    <ol>
+
+    </ol>
+
+</body>
+
+</html>
