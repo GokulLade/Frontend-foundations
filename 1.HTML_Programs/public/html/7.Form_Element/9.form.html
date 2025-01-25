@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            border: 1px solid black;
+            padding: 20px 40px;
+            box-shadow: 1px 1px 5px black;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Login form</h1>
+        <form action="demo.jsp" method="post">
+            User Name: <input type="text" name="username">
+            Password: <input type="password" name="password">
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
